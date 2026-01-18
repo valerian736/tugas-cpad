@@ -1,4 +1,5 @@
-#pragma once
+#ifndef HASHERWORKER_H
+#define HASHERWORKER_H
 
 #include <QObject>
 
@@ -14,3 +15,5 @@ signals:
     void hashReady(int row, QString digestHex);
     void hashError(int row, QString message);
 };
+
+#endif
