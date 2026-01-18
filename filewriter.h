@@ -1,4 +1,6 @@
-#pragma once
+#ifndef FILEWRITERWORKER_H
+#define FILEWRITERWORKER_H
+
 
 #include <QObject>
 #include <QHash>
@@ -23,3 +25,5 @@ signals:
 private:
     QHash<int, QFile*> files; // row -> file handle (worker thread only)
 };
+
+#endif
