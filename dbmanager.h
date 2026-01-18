@@ -1,4 +1,6 @@
-#pragma once
+#ifndef DBMANAGER_H
+#define DBMANAGER_H
+
 
 #include <QString>
 #include <QSqlDatabase>
@@ -39,3 +41,5 @@ private:
     QString connName;
     QSqlDatabase db;
 };
+
+#endif
